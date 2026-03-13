@@ -1,0 +1,155 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin-top: 30px;
+            font-family: "Inter", sans-serif;
+            background-color: #F9F7F2;
+        }
+
+        header h1 {
+            text-align: center;
+            color: chocolate;
+            font-weight: 700;
+            font-family: 'Merriweather', serif;
+        }
+        main {
+            padding: 2rem;
+        }
+
+        #section-form {
+            max-width: 550px;
+            margin-inline: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 2rem;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            border-radius: 0.5rem;
+        }
+
+        #section-form h2 {
+            font-family: 'Merriweather', serif;
+            font-weight: normal;
+        }
+
+        #form-blog {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 1rem;
+        }
+
+        .card-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 0.2rem;
+            width: 100%;
+        }
+
+        .card-form textarea, .card-form #titulo {
+            border: 1px solid #d1d5db;
+            width: 100%;
+            padding: .5rem;
+            border-radius: 0.5rem;
+            outline: 2px solid transparent;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card-form textarea:focus, .card-form #titulo:focus {
+            outline: 2px solid #EA580C;
+        }
+
+        #btn-postar {
+            font-size: 0.85rem;
+            border: none;
+            padding: 1rem 2rem;
+            background-color: #EA580C;
+            border-radius: 1.5rem;
+            color: white;
+            font-weight: 600;
+            font-family: "Inter", sans-serif;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            margin-top: 20px;
+        }
+
+        #btn-postar:hover {
+            background-color: #c2410c;
+            transform: translateY(-2px);
+        }
+
+        #section-post {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 60px;
+        }
+
+        #section-post h2 {
+            color: #EA580C;
+        }
+
+        #posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+            width: 100%;
+            max-width: 1200px; 
+            margin: 0 auto;
+            gap: 1.5rem;
+            border-radius: .5rem;
+            padding: 1.5rem;
+            min-height: 60vh;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            background-color: #F9F7F2;
+
+        }
+
+        .post-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            transition: all 0.3s ease;
+            align-self: start;
+            overflow-wrap: break-word;
+        }
+
+        .post-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border-color: #fdba74; 
+        }
+        .post-card h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.25rem;
+            color: #1f2937;
+            line-height: 1.4;
+        }
+
+        .post-card p {
+            color: #4b5563;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: 300;
+            height: 10vh;
+            background-color: #EA580C;
+        }
